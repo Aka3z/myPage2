@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+        content="740238340384-1o73fd5t1ndn7i58rdek320tg29493u9.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>reDesign My Portfolio</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo"><a href="/index.html">My Prtfolio</a></h1>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Welcome To My Portfolio v2</h1>
+            <br>My Name is Abdulaziz Alhayyani I'm Newbie Front-End &#x1F468;&#x200D;&#x1F4BB; Dev
+            <br>I &#X1F60D; Reading & &#X1F575; About New Technology </br> </p>
+        </div>
+    </div>
+
+    <section class="container content">
+        <h2>Todo list</h2>
+        <p>Todo list is simple projects for beginners but it's include almost everything you learn in it web field you
+            can check my todo list in this way
+        </p>
+        <button onclick="window.location='https://aka3z.github.io/todolist'" class="button4"
+            style="background-color:#ffffff;">Here</button>
+
+        <h3>Expending cards</h3>
+        <p>it's project for manipulate Images via CSS & JavaScript </p>
+        <button onclick="window.location='https://aka3z.github.io/expendingcards/'" class="button4"
+            style="background-color:#ffffff;">Here</button>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn btn-outline-dark" href="" role="button" style="text-transform:none">
+                    <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                    Login with Google
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="lab_social_icon_footer">
+        <div class="text-center center-block">
+            <a href="https://www.facebook.com/ha.aziz.142/"><i id="social-fb"
+                    class="fa fa-facebook-square fa-3x social"></i></a>
+            <a href="https://twitter.com/akaaziz7"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://wwww.github.com/aka3z"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+            <a href="mailto:alhayyaniabdulaziz@gmail.com"><i id="social-em"
+                    class="fa fa-envelope-square fa-3x social"></i></a>
+    </section>
+    </div>
+    </div>
+
+    <script src="script.js">
+        <a href="#" onclick="signOut();">Sign out</a>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+        auth2.signOut()
+    </script>
+</body>
+
+</html>
